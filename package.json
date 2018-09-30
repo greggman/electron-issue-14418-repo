@@ -6,7 +6,7 @@
   "main": "main.js",
   "scripts": {
     "watch": "babel --watch --out-dir out --source-maps inline src",
-    "build": "npm run build-app && npm run build-web",
+    "build": "babel --out-dir out --source-maps inline src",
     "start": "cross-env NODE_ENV=development electron main.js",
     "startp": "cross-env NODE_ENV=production electron main.js"
   },
